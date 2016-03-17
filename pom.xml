@@ -11,12 +11,12 @@
     <properties>
         <maven.compiler.target>1.7</maven.compiler.target>
         <maven.compiler.source>1.7</maven.compiler.source>
-        <spark.version>1.5.0-cdh5.5.0</spark.version>
-        <hbase.version>1.0.0-cdh5.5.0</hbase.version>
-        <hadoop.version>2.6.0-cdh5.5.0</hadoop.version>
-        <kafka.version>0.8.2.0-kafka-1.4.0</kafka.version>
-        <flume.version>1.6.0-cdh5.5.0</flume.version>
-        <parquet.version>1.5.0-cdh5.5.0</parquet.version>
+        <spark.version>1.5.2.2.3.4.0-3485</spark.version>
+        <hbase.version>1.1.2.2.3.4.0-3485</hbase.version>
+        <hadoop.version>2.7.1.2.3.4.0-3485</hadoop.version>
+        <kafka.version>0.9.0.2.3.4.0-3485</kafka.version>
+        <flume.version>1.5.2.2.3.4.0-3485</flume.version>
+        <parquet.version>1.5.0</parquet.version>
     </properties>
 
     <dependencies>
@@ -511,15 +511,39 @@
 
     <repositories>
         <repository>
-            <id>cloudera</id>
-            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+            <id>HDPReleases</id>
+            <name>HDP Releases</name>
+            <url>http://repo.hortonworks.com/content/repositories/releases/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>HDPReleasesPublic</id>
+            <name>HDP Releases Public</name>
+            <url>http://repo.hortonworks.com/content/groups/public/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>maven</id>
+            <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
     </repositories>
 
     <pluginRepositories>
         <pluginRepository>
-            <id>cloudera</id>
-            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+            <id>HDPReleases</id>
+            <name>HDP Releases</name>
+            <url>http://repo.hortonworks.com/content/repositories/releases/</url>
+            <layout>default</layout>
+        </pluginRepository>
+        <pluginRepository>
+            <id>HDPReleasesPublic</id>
+            <name>HDP Releases Public</name>
+            <url>http://repo.hortonworks.com/content/groups/public/</url>
+            <layout>default</layout>
+        </pluginRepository>
+         <pluginRepository>
+            <id>maven</id>
+            <url>https://repo.maven.apache.org/maven2/</url>
         </pluginRepository>
     </pluginRepositories>
 
